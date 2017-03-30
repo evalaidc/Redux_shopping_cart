@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 // through react-redux
 import { connect } from 'react-redux'
 
-import * as CartASctions from '../actions/CartActions'
+import * as CartActions from '../actions/CartActions'
 import Shelf from '../components/Shelf'
 
 class Cart extends Component {
@@ -65,6 +65,6 @@ function mapDispatchToProps(dispatch){
 const connection = connect(mapStateToProps, mapDispatchToProps)
 
 // wraps Cart component with store connection configured above
-const wrappedComponet = connection(Cart)
+const wrappedComponent = connection(Cart)
 
 export default wrappedComponent
