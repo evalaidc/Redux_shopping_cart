@@ -4,5 +4,7 @@ export default(state = [], action) => {
       return [...state, action.item]
     default:
       return state
+    case 'DELETE_ITEM':
+      return[...state.filter(element => element !== action.item) ]
   }
 }

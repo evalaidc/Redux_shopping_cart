@@ -14,3 +14,11 @@ export const addToCart = (item) => {
     item
   }
 }
+
+
+export const deleteFromCart = (item) => {
+  return {
+    type: 'DELETE_ITEM',
+    item
+  }
+}

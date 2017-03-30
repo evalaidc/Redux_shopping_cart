@@ -24,7 +24,7 @@ class Cart extends Component {
 
     return (
       <div>
-        <Shelf addItem={this.props.actions.addToCart} />
+        <Shelf addItem={this.props.actions.addToCart} deleteItem={this.props.actions.deleteFromCart}/>
         <h2> Cart </h2>
         <ol>
           {CartItems}
